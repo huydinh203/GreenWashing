@@ -1,0 +1,50 @@
+.survey-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.survey-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #66bb6a, #43a047);
+  color: #fff;
+  text-decoration: none;
+  padding: 16px 36px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(67, 160, 71, 0.35);
+  transition: all 0.35s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.survey-btn .emoji {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.survey-btn:hover .emoji {
+  transform: rotate(-10deg) scale(1.1);
+}
+
+.survey-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(67, 160, 71, 0.45);
+  background: linear-gradient(135deg, #4caf50, #388e3c);
+}
+
+@media (max-width: 480px) {
+  .survey-btn {
+    padding: 14px 24px;
+    font-size: 1rem;
+  }
+
+  .survey-btn .emoji {
+    font-size: 1.3rem;
+  }
+}

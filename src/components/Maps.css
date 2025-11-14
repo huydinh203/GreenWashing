@@ -1,0 +1,109 @@
+/* --- Vùng bao tổng thể --- */
+.google-map-section {
+  width: 100%;
+  background: linear-gradient(180deg, #f1f8e9, #e8f5e9);
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- Bọc nội dung bản đồ --- */
+.google-map-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  animation: fadeInUp 0.8s ease both;
+}
+
+/* --- Tiêu đề và mô tả --- */
+.map-title {
+  font-size: 1.8rem;
+  color: #1b5e20;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.map-description {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+/* --- Container chứa bản đồ --- */
+.google-map-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #f9f9f9;
+}
+
+.google-map-container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+}
+
+/* --- iframe chiếm toàn bộ vùng hiển thị --- */
+.google-map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 14px;
+}
+
+/* --- Animation nhẹ nhàng khi load --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Responsive cho các kích thước màn hình khác nhau --- */
+@media (max-width: 1024px) {
+  .google-map-section {
+    padding: 60px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .map-title {
+    font-size: 1.5rem;
+  }
+
+  .map-description {
+    font-size: 0.95rem;
+  }
+
+  .google-map-container {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-title {
+    font-size: 1.3rem;
+  }
+
+  .map-description {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+
+  .google-map-container {
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+  }
+}
