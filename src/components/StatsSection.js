@@ -31,12 +31,6 @@ function GreenwashingTactics() {
           <p>Quảng cáo một khía cạnh "xanh" nhỏ trong khi che giấu tác động xấu lớn hơn.</p>
           <a href="#learn-more" className="learn-more-btn">Tìm hiểu thêm</a>
         </div>
-        <div className="tactic-card">
-          <img src={hideImg} alt="Che giấu thông tin" />
-          <h3>Che giấu thông tin quan trọng</h3>
-          <p>Quảng cáo một khía cạnh "xanh" nhỏ trong khi che giấu tác động xấu lớn hơn.</p>
-          <a href="#learn-more" className="learn-more-btn">Tìm hiểu thêm</a>
-        </div>
       </div>
     </section>
   );

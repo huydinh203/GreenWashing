@@ -35,14 +35,6 @@ function Impact() {
             đồng và tạo động lực cho hành vi tiêu dùng xanh.
           </p>
         </div>
-        <div className="impact-card">
-          <img src={awarenessImg} alt="Tác động xã hội" />
-          <h3>Tác động đến nhận thức xã hội</h3>
-          <p>
-            Việc nhận diện và chống lại greenwashing giúp nâng cao ý thức cộng
-            đồng và tạo động lực cho hành vi tiêu dùng xanh.
-          </p>
-        </div>
       </div>
     </section>
   );
